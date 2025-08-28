@@ -19,6 +19,9 @@ export const searchCompanies = async (query: string) => {
         if(axios.isAxiosError(error)){
             console.log("Error message: ", error.message);
             return error.message;
+        }else{
+            console.log("Unexpected error: ", error);
+            return "An unexpected error occurred";  
         }
         
     }
