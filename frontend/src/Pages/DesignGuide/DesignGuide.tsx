@@ -18,7 +18,7 @@ const DesignPage = (props: Props) => {
     <>
     <h1>FinApp Design Page</h1>
     <RatioList data={testIncomeStatementData} config={tableConfig}/>
-    <Table />
+    <Table data = {testIncomeStatementData} config = {tableConfig} />
     <h3> Stores designs for the app </h3>
     
     </>

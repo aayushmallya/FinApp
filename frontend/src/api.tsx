@@ -1,5 +1,5 @@
 import axios from "axios";
-import { CompanyKeyMetrics, CompanyProfile, CompanySearch } from "./company";
+import { CompanyBalanceSheet, CompanyIncomeStatement, CompanyKeyMetrics, CompanyProfile, CompanySearch } from "./company";
 
 
 
@@ -40,6 +40,24 @@ export const getCompanyProfile = async (query: string) => {
 export const getKeyMetrics = async (query: string) => {
     try{
         const data = await axios.get<CompanyKeyMetrics[]>(`https://financialmodelingprep.com/stable/ratios-ttm?symbol=${query}&apikey=${process.env.REACT_APP_API_KEY}`)//(`https://financialmodelingprep.com/stable/key-metrics-ttm?symbol=${query}&apikey=${process.env.REACT_APP_API_KEY}`)
+        return data;
+    } catch (error: any) {
+        console.log("error message from PAI: ", error.message);
+}
+};
+
+export const getIncomeStatement = async (query: string) => {
+    try{
+        const data = await axios.get<CompanyIncomeStatement[]>(`https://financialmodelingprep.com/stable/income-statement?symbol=${query}&apikey=${process.env.REACT_APP_API_KEY}`)
+        return data;
+    } catch (error: any) {
+        console.log("error message from PAI: ", error.message);
+}
+};
+
+export const getBalanceSheet = async (query: string) => {
+    try{
+        const data = await axios.get<CompanyBalanceSheet[]>(`https://financialmodelingprep.com/stable/balance-sheet-statement?symbol=${query}&apikey=${process.env.REACT_APP_API_KEY}`)
         return data;
     } catch (error: any) {
         console.log("error message from PAI: ", error.message);
