@@ -4,6 +4,7 @@ import { useOutletContext } from 'react-router-dom';
 import { getCashFlow, getKeyMetrics } from '../../api';
 import RatioList from '../RatioList/RatioList';
 import Table from '../Table/Table';
+import Spinner from '../Spinners/Spinners';
 
 type Props = {}
 
@@ -57,7 +58,7 @@ const CashFlow = (props: Props) => {
   return cashFlowData ? (
     <Table config={config} data={cashFlowData}></Table>
   ) : (
-     <>Loading...</> 
+     <Spinner/> 
   );
 };
 
