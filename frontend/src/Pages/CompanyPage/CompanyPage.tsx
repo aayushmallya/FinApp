@@ -5,6 +5,7 @@ import { getCompanyProfile } from '../../api';
 import Sidebar from '../../Components/Sidebar/Sidebar';
 import CompanyDash from '../../Components/CompanyDash/CompanyDash';
 import Tile from '../../Components/Tile/Tile';
+import Spinner from '../../Components/Spinners/Spinners';
 
 interface Props {}
 
@@ -29,14 +30,14 @@ const CompanyPage = (props: Props) => {
         <Tile title="Sector" subTitle={company.sector}></Tile>
         <Tile title="Exchange" subTitle={company.exchange}></Tile>
 
-        <p className="bg-white shadow rounded text-medium text-gray-900 mt-1 m-4">
+        {/* <p className="bg-white shadow rounded text-medium text-gray-900 mt-1 m-4">
           {company.description}
-        </p>
+        </p> */}
       </CompanyDash>
 
         </div>
   ) : (
-    <div> Company not founddd</div>
+    <Spinner/> 
   )}
   </>
   );
