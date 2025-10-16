@@ -6,6 +6,7 @@ import Sidebar from '../../Components/Sidebar/Sidebar';
 import CompanyDash from '../../Components/CompanyDash/CompanyDash';
 import Tile from '../../Components/Tile/Tile';
 import Spinner from '../../Components/Spinners/Spinners';
+import CompFinder from '../../Components/CompFinder/CompFinder';
 
 interface Props {}
 
@@ -29,6 +30,7 @@ const CompanyPage = (props: Props) => {
         <Tile title="Price" subTitle={company.price.toString()}></Tile>
         <Tile title="Sector" subTitle={company.sector}></Tile>
         <Tile title="Exchange" subTitle={company.exchange}></Tile>
+        <CompFinder ticker={company.symbol} />
 
         {/* <p className="bg-white shadow rounded text-medium text-gray-900 mt-1 m-4">
           {company.description}
