@@ -1,5 +1,5 @@
 import axios from "axios";
-import { CompanyBalanceSheet, CompanyCashFlow, CompanyComp, CompanyIncomeStatement, CompanyKeyMetrics, CompanyProfile, CompanySearch } from "./company";
+import { CompanyBalanceSheet, CompanyCashFlow, CompanyComp, CompanyIncomeStatement, CompanyKeyMetrics, CompanyProfile, CompanySearch, CompanyTenK } from "./company";
 
 
 
@@ -76,6 +76,22 @@ export const getCashFlow = async (query: string) => {
 export const getComp = async (query: string) => {
     try{
         const data = await axios.get<CompanyComp[]>(`https://financialmodelingprep.com/stable/stock-peers?symbol=${query}&apikey=${process.env.REACT_APP_API_KEY}`)
+        return data;
+    } catch (error: any) {
+        console.log("error message from PAI: ", error.message);
+}
+};
+
+const today = new Date();
+const lastYear = new Date(today);
+lastYear.setFullYear(today.getFullYear() - 1);
+
+const fromDate = lastYear.toLocaleDateString('en-CA');
+const toDate = today.toLocaleDateString('en-CA');
+
+export const getTenK = async (query: string) => {
+    try{
+        const data = await axios.get<CompanyTenK[]>(`https://financialmodelingprep.com/stable/sec-filings-search/symbol?symbol=${query}&from=${fromDate}&to=${toDate}&page=0&limit=15&apikey=${process.env.REACT_APP_API_KEY}`)
         return data;
     } catch (error: any) {
         console.log("error message from PAI: ", error.message);

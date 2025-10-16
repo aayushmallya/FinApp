@@ -655,3 +655,15 @@ export interface CompanyComp{
   peersList: string[]
   
 }
+
+export interface CompanyTenK{
+  symbol: string
+  filingDate: string
+  acceptedDate: string
+  cik: string
+  type: string
+  link: string
+  finalLink: string 
+
+
+}
