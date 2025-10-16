@@ -649,3 +649,9 @@ export interface CompanyKeyMetrics {
   dividendPerShareTTM: number;
   debtToMarketCapTTM: number;
 }
+
+export interface CompanyComp{
+  symbol: string
+  peersList: string[]
+  
+}
