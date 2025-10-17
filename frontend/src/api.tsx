@@ -85,7 +85,7 @@ export const getComp = async (query: string) => {
 const today = new Date();
 const lastYear = new Date(today);
 lastYear.setFullYear(today.getFullYear() - 1);
-lastYear.setDate(lastYear.getDate() + 1)
+
 
 const fromDate = lastYear.toLocaleDateString('en-CA');
 const toDate = today.toLocaleDateString('en-CA');
