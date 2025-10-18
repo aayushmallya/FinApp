@@ -661,7 +661,7 @@ export interface CompanyTenK{
   filingDate: string
   acceptedDate: string
   cik: string
-  type: string
+  formType: string
   link: string
   finalLink: string 
 
