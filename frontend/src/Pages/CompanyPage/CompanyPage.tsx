@@ -34,9 +34,9 @@ const CompanyPage = (props: Props) => {
         <CompFinder ticker={company.symbol} />
         <TenKFinder ticker={company.symbol}/>
 
-        {/* <p className="bg-white shadow rounded text-medium text-gray-900 mt-1 m-4">
+         <p className="bg-white shadow rounded text-medium text-gray-900 mt-1 m-4">
           {company.description}
-        </p> */}
+        </p> 
       </CompanyDash>
 
         </div>

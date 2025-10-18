@@ -7,7 +7,9 @@ type Props = {
 }
 
 const TenKFinderItem = ({tenK}: Props) => {
-    const fillingDate = new Date(tenK.fillingDate).getFullYear()
+    const filingDate = new Date(tenK.filingDate).getMonth() // getFullYear()
+    const filingDay = new Date(tenK.filingDate).getDate()
+    const filingYear = new Date(tenK.filingDate).getFullYear()
   return (
     <Link
         reloadDocument
@@ -15,7 +17,7 @@ const TenKFinderItem = ({tenK}: Props) => {
         type="button"
         className="inline-flex items-center p-4 text-md text-white bg-lightGreen rounded-md"
     
-    > 10K - {tenK.symbol} - {fillingDate}</Link>
+    > Form {tenK.formType}: {tenK.symbol} <br /> {filingDate} - {filingDay} - {filingYear}</Link>
   )
 }
 
