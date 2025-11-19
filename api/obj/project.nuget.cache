@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KgEZwTwZedM=",
+  "dgSpecHash": "enX3TvcoYDM=",
   "success": true,
   "projectFilePath": "C:\\Users\\Aayush\\Documents\\FinApp\\api\\api.csproj",
   "expectedPackageFiles": [
@@ -48,6 +48,7 @@
     "C:\\Users\\Aayush\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\Aayush\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Aayush\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Aayush\\.nuget\\packages\\oqo0.swaggerthemes\\1.4.3\\oqo0.swaggerthemes.1.4.3.nupkg.sha512",
     "C:\\Users\\Aayush\\.nuget\\packages\\swashbuckle.aspnetcore\\10.0.0\\swashbuckle.aspnetcore.10.0.0.nupkg.sha512",
     "C:\\Users\\Aayush\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\10.0.0\\swashbuckle.aspnetcore.swagger.10.0.0.nupkg.sha512",
     "C:\\Users\\Aayush\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\10.0.0\\swashbuckle.aspnetcore.swaggergen.10.0.0.nupkg.sha512",

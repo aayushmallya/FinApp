@@ -10,6 +10,7 @@ type Props = {
 const CompFinder = ({ticker}: Props) => {
     const [companyData, setCompanyData] = useState<CompanyComp[]>([])
     useEffect (() => {
+        //document.body.style.backgroundColor = 'red'
         const getComps = async () => {
             const value = await getComp(ticker)
            // const peers = value.map(value => value.symbol)

@@ -71,6 +71,7 @@ const CompanyProfile = (props: Props) => {
   const ticker = useOutletContext<string>()
   const [companyData, setCompanyData] = useState<CompanyKeyMetrics>()
   useEffect(() => {
+    
     const getCompanyKeyMetrics = async() => {
       const value = await getKeyMetrics(ticker)
       setCompanyData(value?.data[0])

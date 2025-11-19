@@ -14,15 +14,15 @@ interface Props {
 const Card: React.FC<Props> = ({id, searchResult, onPortfolioCreate}: Props) : JSX.Element => {
   return (
   <div
-      className="flex flex-col items-center justify-between w-full p-6 bg-slate-100 rounded-lg md:flex-row"
+      className="flex flex-col items-center justify-between w-full p-6 bg-slate-100 rounded-lg md:flex-row relative bg-gray-500/30 "
       key={id}
       id={id}
     >
-      <Link to = {`/company/${searchResult.symbol}/company-profile`} className="font-bold text-center text-black md:text-left">
+      <Link to = {`/company/${searchResult.symbol}/company-profile`} className="font-bold text-center text-white md:text-left">
         {searchResult.name} ({searchResult.symbol})
       </Link>
-      <p className="text-black">{searchResult.currency}</p>
-      <p className="font-bold text-black">
+      <p className="text-white">{searchResult.currency}</p>
+      <p className="font-bold text-white">
         {searchResult.exchangeShortName} - {searchResult.stockExchange}
       </p>
       <AddPortfolio

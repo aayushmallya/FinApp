@@ -65,6 +65,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[10.0.0, )"
+            },
+            "oqo0.SwaggerThemes": {
+              "target": "Package",
+              "version": "[1.4.3, )"
             }
           },
           "imports": [

@@ -15,6 +15,7 @@ const CompanyPage = (props: Props) => {
   let { ticker } = useParams();
   const [company, setCompany] = useState<CompanyProfile>();
   useEffect(() => {
+    document.body.style.backgroundColor = '#3C3C3C'
     const getProfileInit = async () => {
       const result = await getCompanyProfile(ticker!);
       setCompany(result?.data[0]);
