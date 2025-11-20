@@ -16,7 +16,7 @@ function Sidebar({}: Props) {
 
             <div className="flex-col min-h-full px-0 flex flex-wrap items-center justify-between w-full mx-auto overflow-y-auto overflow-x-hidden">
 
-              <div className="flex bg-gray-500/100 flex-col items-stretch opacity-100 relative mt-4 overflow-y-auto overflow-x-hidden h-auto z-40 items-center flex-1 rounded w-full">
+              <div className="flex bg-gray-600/100 flex-col items-stretch opacity-100 relative mt-4 overflow-y-auto overflow-x-hidden h-auto z-40 items-center flex-1 rounded w-full">
 
                 <div className="md:flex-col md:min-w-full flex flex-col list-none">
 
