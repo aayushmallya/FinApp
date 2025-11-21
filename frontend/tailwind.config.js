@@ -14,7 +14,8 @@ module.exports = {
         darkBlue: "hsl(213.86, 58.82%, 46.67%)",
         lightGreen: "hsl(156.62, 73.33%, 58.82%)",
         gold: "#e0bd48ff",
-        mint: "#1bff95ff"
+        mint: "#1bff95ff",
+        dgray: "#222020ff"
       },
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
