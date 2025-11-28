@@ -33,9 +33,9 @@ const Table = ({config, data}: Props) => {
     }
     )
   return (
-    <div className="bg=white shadow rounded-lg p-4 sm:p-6 xl:p-8">
-        <table className="min-w-full divide-y divide-gray-200 m-5">
-            <thead className="bg-gray-50">{renderHeaders}</thead>
+    <div className="bg-gray-100/10 shadow rounded-lg p-4 sm:p-6 xl:p-8">
+        <table className="min-w-full divide-y divide-gray-200 m-5 text-white">
+            <thead className="bg-gray-500">{renderHeaders}</thead>
             <tbody>{renderedRows}</tbody>
         </table>
         
