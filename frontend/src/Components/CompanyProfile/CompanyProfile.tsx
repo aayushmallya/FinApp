@@ -68,6 +68,7 @@ const tableConfig = [
 ];
 
 const CompanyProfile = (props: Props) => {
+  useEffect(() => {document.body.style.backgroundColor = '#222020ff'})
   const ticker = useOutletContext<string>()
   const [companyData, setCompanyData] = useState<CompanyKeyMetrics>()
   useEffect(() => {

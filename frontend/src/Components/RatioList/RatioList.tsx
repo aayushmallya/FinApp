@@ -15,15 +15,15 @@ const RatioList = ({config, data}: Props) => {
              <li className="py-3 sm:py-4">
                 <div className="flex items-center space-x-4">
                     <div className="flex-1 min-w-0">
-                        <p className="text-sm font-medium text-gray-900 truncate">
+                        <p className="text-sm font-medium text-white truncate">
                         {row.label}
                         </p>
 
-                        <p className="text-sm text-gray-900 truncate">
+                        <p className="text-sm text-gray-300/70 truncate">
                             {row.subTitle && row.subTitle}
                         </p>
                     </div>
-                    <div className="inline-flex items-center text-base font-semibold text-gray-900">
+                    <div className="inline-flex items-center text-base font-semibold text-white">
                         {row.render(data)}
                     </div>
 
@@ -32,7 +32,7 @@ const RatioList = ({config, data}: Props) => {
         )
     })
   return (
-    <div className="bg-gray-100/40 shadow rounded-lg ml-4 mt-4 mb-4 p-4 sm:p-6 h-full">
+    <div className="bg-gray-100/10 shadow rounded-lg ml-4 mt-4 mb-4 p-4 sm:p-6 h-full">
         <ul className="divide-y divided-gray-200">{renderedRows}</ul>
     </div>
   )

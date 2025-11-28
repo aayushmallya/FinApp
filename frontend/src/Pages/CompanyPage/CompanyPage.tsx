@@ -15,7 +15,7 @@ const CompanyPage = (props: Props) => {
   let { ticker } = useParams();
   const [company, setCompany] = useState<CompanyProfile>();
   useEffect(() => {
-    document.body.style.backgroundColor = '#3C3C3C'
+    document.body.style.backgroundColor = '#222020ff'
     const getProfileInit = async () => {
       const result = await getCompanyProfile(ticker!);
       setCompany(result?.data[0]);
@@ -35,7 +35,7 @@ const CompanyPage = (props: Props) => {
         <CompFinder ticker={company.symbol} />
         <TenKFinder ticker={company.symbol}/>
 
-         <p className="bg-white shadow rounded text-medium text-gray-900 mt-1 m-4">
+         <p className=" shadow rounded text-medium text-gray-400 mt-1 m-4">
           {company.description}
         </p> 
       </CompanyDash>
