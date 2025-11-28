@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "./logo.png";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 interface Props {}
 
 const Navbar = (props: Props) => {
+  useEffect(() => {document.body.style.backgroundColor = '#222020ff'})
+  
   return (
     <nav className="relative container mx-auto p-6 bg-dgray">
       <div className="flex items-center justify-between">

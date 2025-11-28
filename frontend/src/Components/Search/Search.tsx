@@ -1,4 +1,4 @@
-import React, { ChangeEvent, JSX, useState, SyntheticEvent } from 'react'
+import React, { ChangeEvent, JSX, useState, SyntheticEvent, useEffect } from 'react'
 
 interface Props {
 
@@ -8,6 +8,8 @@ handleSearchChange: (e: ChangeEvent<HTMLInputElement>) => void;
 };
 
 const Search: React.FC<Props> = ({ onSearchSubmit, search, handleSearchChange }: Props) : JSX.Element => {
+
+  useEffect(() => {document.body.style.backgroundColor = '#222020ff'})
 
     return (
      <section className="relative bg-mint/20">
