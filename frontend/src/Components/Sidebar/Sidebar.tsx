@@ -4,6 +4,8 @@ import {FaHome} from "react-icons/fa"
 
 type Props = {}
 
+const HomeIcon = FaHome as React.ComponentType
+
 function Sidebar({}: Props) {
   useEffect(() => {document.body.style.backgroundColor = '#222020ff'})
   
@@ -26,14 +28,14 @@ function Sidebar({}: Props) {
                     to="company-profile" 
                     className="flex md:min-w-full text-gold test-medium uppercase font-bold block pt-8 pb-4 no-underline pl-4"
                     >
-                        <FaHome />
+                        <HomeIcon />
                         <h6 className="ml-3">Company Profile</h6>
                  </Link>
                  <Link 
                     to="income-statement"
                     className="flex md:min-w-full text-gold test-medium uppercase font-bold block pt--1 pb-4 no-underline pl-4"
                     >
-                         <FaHome />
+                         <HomeIcon />
                         <h6 className="ml-3">Income Statement</h6>
 
                  </Link>
@@ -41,7 +43,7 @@ function Sidebar({}: Props) {
                     to="balance-sheet"
                     className="flex md:min-w-full text-gold test-medium uppercase font-bold block pt--1 pb-4 no-underline pl-4"
                     >
-                         <FaHome />
+                         <HomeIcon />
                         <h6 className="ml-3">Balance Sheet</h6>
 
                  </Link>
@@ -49,7 +51,7 @@ function Sidebar({}: Props) {
                     to="cash-flow"
                     className="flex md:min-w-full text-gold test-medium uppercase font-bold block pt--1 pb-4 no-underline pl-4"
                     >
-                         <FaHome />
+                         <HomeIcon />
                         <h6 className="ml-3">Cash Flow Statement</h6>
 
                  </Link>
