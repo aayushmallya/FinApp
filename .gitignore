@@ -10,6 +10,17 @@
 
 # production
 /build
+/frontend/build
+
+# dependencies
+/frontend/node_modules
+/node_modules
+
+# generated build artifacts
+/api/bin
+/api/obj
+/api/publish
+/publish
 
 # misc
 .DS_Store
